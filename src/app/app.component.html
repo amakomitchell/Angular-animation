@@ -9,6 +9,11 @@
         style="width: 100px; height: 100px" 
         [@divState]="state">
       </div>
+      <br>
+      <div
+      style="width: 100px; height: 100px" 
+      [@wildState]="wildState">
+    </div>
     </div>
   </div>
   <div class="row">
@@ -20,6 +25,7 @@
         <li
           class="list-group-item"
           (click)="onDelete(item)"
+          [@list1]
           *ngFor="let item of list">
           {{ item }}
         </li>
